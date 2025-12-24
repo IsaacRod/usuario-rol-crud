@@ -1,0 +1,33 @@
+# Maven
+target/
+!mvnw
+!mvnw.cmd
+!.mvn/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos de configuración local
+*.properties
+!src/main/resources/application.properties
+!src/main/resources/data.sql
+
+# H2 Database (archivos de datos)
+*.db
+*.trace.db

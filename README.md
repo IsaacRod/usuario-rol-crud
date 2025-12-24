@@ -95,15 +95,15 @@ usuario-rol-crud/
 ### Instalación paso a paso
 
 1. Descarga el proyecto:
-```bash
+
 git clone https://github.com/IsaacRod/usuario-rol-crud.git
 cd usuario-rol-crud
 
 2.Compila:
-./mvnw clean compile
+mvnw clean compile
 
 3.Inicia la aplicación:
-./mvnw spring-boot:run
+mvnw spring-boot:run
 
 4. ¡Listo! Accede a:
 
@@ -144,43 +144,11 @@ PUT	/api/roles/{id}		Actualiza rol
 DELETE	/api/roles/{id}		Elimina rol
 
 Ejemplos prácticos
-Crear un usuario
-curl -X POST http://localhost:8080/api/usuarios \
-  -H "Content-Type: application/json" \
-  -d '{"nombre":"María","apellidos":"López","email":"maria@empresa.com","roleIds":[1,2]}'
-
-Respuesta esperada:
-
-{
-  "id": 1,
-  "nombre": "María",
-  "apellidos": "López",
-  "email": "maria@empresa.com",
-  "roles": [
-    {"id": 1, "nombre": "ADMIN", "descripcion": "Administrador"},
-    {"id": 2, "nombre": "EDITOR", "descripcion": "Editor"}
-  ],
-  "fechaCreacion": "2024-01-25T14:30:00",
-  "fechaActualizacion": "2024-01-25T14:30:00"
-}
-
-Buscar todos los usuarios
-
-curl -X GET http://localhost:8080/api/usuarios
-
-Actualizar un usuario
-
-curl -X PUT http://localhost:8080/api/usuarios/1 \
-  -H "Content-Type: application/json" \
-  -d '{"nombre":"María José","apellidos":"López García"}'
-
-Pruebas del sistema
-Pruebas automáticas
-
-./mvnw test
 
 Pruebas con Postman
 Abre Postman
+
+https://www.postman.com/isaacg01d/workspace/usuario-rol-api/collection/29937809-122d52c1-4dab-4721-bf57-0c688037089b?action=share&creator=29937809
 
 Configura la URL base como: http://localhost:8080
 
